@@ -1,0 +1,50 @@
+.Navbar {
+  min-height: 3.3rem;
+  position: sticky;
+  position: -webkit-sticky;
+  // min-height: 52px;
+  // position: fixed;
+  // width: 100vw;
+
+  top: 0;
+  z-index: 4;
+  transition: background-color 0.25s ease;
+
+  a {
+    line-height: 1.8em;
+    font-size: 1em;
+  }
+}
+
+.Navbar-item {
+  position: relative;
+
+  span {
+    z-index: 9;
+    margin-left: 10px;
+    transition: all 0.2s ease 0.15s;
+  }
+
+  &:hover>span {
+    color: black;
+    transition: all 0.2s ease 0.2s;
+  }
+
+  // &:focus {
+  //   outline-color: rgba(255, 255, 255, 0.8);
+  //   outline-style: dotted;
+  // }
+
+  .link-color {
+    position: absolute;
+    height: 8px;
+    width: 4px;
+    transition: height 0.15s ease-out 0.2s, width 0.2s ease-in;
+  }
+
+  &:hover>.link-color {
+    height: 2rem;
+    width: 90%;
+    transition: height 0.15s ease-in, width 0.1s linear 0.15s;
+  }
+}

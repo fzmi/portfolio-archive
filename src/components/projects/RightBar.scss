@@ -1,0 +1,9 @@
+.RightBar {
+  // border-radius: 0.3rem;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.5s ease;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 5rem;
+  overflow-y: auto;
+}

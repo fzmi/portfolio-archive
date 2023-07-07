@@ -1,0 +1,44 @@
+// custom colors
+$uq-purple-main: #51247a;
+$uq-purple-dark: #2c1443;
+$nifu-orange: #ff6500;
+$nifu-yellow: #f2a900;
+
+// light theme colors
+$dark-text-main: #0c0c0d;
+$dark-text-sec: #343a40;
+$dark-text-thr: #6c757d;
+$light-background: #fff;
+$light-card: #fff;
+
+// dark theme colors
+$light-text: #f8f9fa;
+$dark-background: #100e17;
+$dark-card: #1b1a22;
+
+$light-theme: (
+  background: $light-background,
+  foreground: $dark-text-main,
+  navbar: $uq-purple-main,
+  nifuText: $nifu-orange,
+  card: $light-card,
+  link: $uq-purple-main,
+);
+
+$dark-theme: (
+  background: $dark-background,
+  foreground: $light-text,
+  navbar: $uq-purple-dark,
+  nifuText: $nifu-yellow,
+  card: $dark-card,
+  link: $nifu-yellow,
+);
+
+:export {
+  @each $key, $value in $light-theme {
+    #{$key}Light: $value;
+  }
+  @each $key, $value in $dark-theme {
+    #{$key}Dark: $value;
+  }
+}

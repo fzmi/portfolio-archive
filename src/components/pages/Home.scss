@@ -1,0 +1,22 @@
+.Home-Content {
+  .project-card {
+    margin: 0 1rem;
+  }
+
+  .legal {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Home-Content {
+    .project-card {
+      margin: 0 1rem 0 0;
+    }
+
+    .legal {
+      display: block;
+    }
+  }
+}
